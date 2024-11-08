@@ -60,7 +60,7 @@ public class ExamenLab {
                             mayor = numero;
                         }
 
-                        System.out.print("¿Desea ingresar otro numero? (si/no): ");
+                        System.out.print("Desea ingresar otro numero? (si/no): ");
                         respuesta = scanner.next();
                     }
 
@@ -74,7 +74,7 @@ public class ExamenLab {
              
                       } else if (option == 3) {
                     System.out.print("Ingrese el nombre del Cliente: ");
-                    scanner.nextLine(); // Limpiar el buffer
+                    scanner.nextLine(); 
                     String nombreCliente = scanner.nextLine();
 
                     int canalesHD = 0;
@@ -88,7 +88,7 @@ public class ExamenLab {
 
                         if (tipoCanal.equalsIgnoreCase("HD")) {
                             canalesHD++;
-                            costoCanales += 30; // 20 + 10 para HD
+                            costoCanales += 30;
                         } else if (tipoCanal.equalsIgnoreCase("NORMAL")) {
                             canalesNormales++;
                             costoCanales += 20;
