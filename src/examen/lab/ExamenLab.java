@@ -158,7 +158,7 @@ public class ExamenLab {
                     System.out.println("La cantidad de vocales en minusculas es: " + contadorVocales);
                   System.out.println("La cantidad de vocales en minusculas es: " + contadorVocales);
                 } else if (option == 5) {
-                    System.out.println("Saliendo del programa...");
+                    System.out.println("Hasta Luego");
                 }
         }
     }
