@@ -131,20 +131,38 @@ public class ExamenLab {
                 } else {
                     System.out.println("Opcion no valida. Intente de nuevo.");
                 }
-            } else {
-                System.out.println("Por favor, ingrese un numero valido.");
-                scanner.next(); 
-            }
+                
+                } else if (option == 4) {
+                    System.out.print("Ingrese una cadena: ");
+                    scanner.nextLine(); 
+                    String cadena = scanner.nextLine();
+                    int contadorVocales = 0;
 
-            System.out.println(); 
+                    for (int i = 0; i < cadena.length(); i++) {
+                        char caracter = cadena.charAt(i);
+                        
+                        
+                        switch (caracter) {
+                            case 'a':
+                            case 'e':
+                            case 'i':
+                            case 'o':
+                            case 'u':
+                                contadorVocales++;
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+
+                    System.out.println("La cantidad de vocales en minusculas es: " + contadorVocales);
+                  System.out.println("La cantidad de vocales en minusculas es: " + contadorVocales);
+                } else if (option == 5) {
+                    System.out.println("Saliendo del programa...");
+                }
         }
-
-        System.out.println("Saliendo del programa...");
-        
     }
 }
+                  
 
-        
 
-        
-            
