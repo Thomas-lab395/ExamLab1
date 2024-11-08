@@ -93,11 +93,11 @@ public class ExamenLab {
                             canalesNormales++;
                             costoCanales += 20;
                         } else {
-                            System.out.println("Tipo de canal no válido.");
+                            System.out.println("Tipo de canal no valido.");
                             continue;
                         }
 
-                        System.out.print("¿Desea ingresar otro canal? (si/no): ");
+                        System.out.print("Desea ingresar otro canal? (si/no): ");
                         respuesta = scanner.next();
                     }
 
@@ -112,7 +112,7 @@ public class ExamenLab {
                     } else if (tipoCaja.equalsIgnoreCase("DVRBOX")) {
                         costoCaja = 150;
                     } else {
-                        System.out.println("Tipo de Caja Digital no válido.");
+                        System.out.println("Tipo de Caja Digital no valido.");
                     }
 
                     int subtotal = costoCanales + costoCaja;
